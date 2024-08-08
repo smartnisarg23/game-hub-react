@@ -2,13 +2,14 @@ import axios, { AxiosRequestConfig } from "axios";
 
 export interface FetchResponse<T> {
   count: number;
+  next: string | null;
   results: T[];
 }
 
 const axiosInstance = axios.create({
   baseURL: "https://api.rawg.io/api",
   params: {
-    key: "2f4e14c63a6549e395c2403f55c80252",
+    key: "95c3b1cc91e04c528d06dc84617d19ea",
   },
 });
 
